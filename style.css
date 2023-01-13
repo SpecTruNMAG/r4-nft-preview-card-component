@@ -26,7 +26,7 @@ html {
   align-items: center;
 }
 .main {
-  max-width: 1440px;
+  
   background-color: var(--very-dark-blue-main-bg);
   width: 100vw;
   height: 100vh;
