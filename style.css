@@ -1,0 +1,150 @@
+:root {
+  /*## Colors
+### Primary*/
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  /*### Neutral*/
+  --very-dark-blue-main-bg: hsl(217, 54%, 11%);
+  --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Outfit", sans-serif;
+  font-size: 62.5%;
+}
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  max-width: 1440px;
+  background-color: var(--very-dark-blue-main-bg);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: var(--very-dark-blue-card-bg);
+  width: 32.7rem;
+  height: auto;
+  margin: 2.4rem;
+  padding: 2.4rem;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+.card > .card-image {
+  width: 28rem;
+  height: 28rem;
+  display: grid;
+  place-content: center;
+  background-image: url("./images/image-equilibrium.jpg");
+  background-size: cover;
+  border-radius: 0.6rem;
+}
+.card > .card-image #card-image-image {
+  display: none;
+}
+.card > .card-image:hover #card-image-image {
+  display: block;
+}
+
+.card > .card-image:hover {
+  background-color: rgba(0, 255, 247, 60%);
+  background-blend-mode: screen;
+  cursor: pointer;
+}
+
+.card > .card-image > img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 1rem;
+}
+
+.card-title {
+  font-size: 2.1rem;
+  color: var(--white);
+  font-weight: 600;
+}
+
+.card-title > a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.card-description {
+  font-size: 1.6rem;
+  color: var(--soft-blue);
+  line-height: 2.5rem;
+  font-weight: 300;
+}
+
+.card-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-etherium,
+.card-date {
+  display: flex;
+  gap: 0.8rem;
+}
+.card-etherium-image {
+  width: 1.1rem;
+  height: auto;
+}
+
+.card-date-image {
+  width: 1.8rem;
+}
+
+.card-date-description {
+  font-size: 1.6rem;
+  color: var(--soft-blue);
+  font-weight: 300;
+}
+
+.card-etherium-description {
+  font-size: 1.5rem;
+  color: var(--cyan);
+  font-weight: 600;
+}
+
+.card-profile {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-profile-image {
+  width: 3.2rem;
+  border-style: solid;
+  border-color: var(--white);
+  border-width: 0.1rem;
+  border-radius: 2rem;
+}
+
+.card-profile-creator {
+  font-size: 1.5rem;
+  color: var(--soft-blue);
+}
+
+.card-profile-creator > a {
+  color: var(--white);
+  text-decoration: none;
+}
